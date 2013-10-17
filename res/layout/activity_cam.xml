@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:columnCount="2"
+    android:orientation="horizontal" >
+
+    <android.opengl.GLSurfaceView
+        android:id="@+id/GLDraw"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="70dp"
+        android:orientation="horizontal" />
+
+    <Button
+        android:id="@+id/toonshading"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:onClick="setToonshading"
+        android:text="TS" />
+
+    <Button
+        android:id="@+id/grayscale"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@+id/toonshading"
+        android:onClick="setGS"
+        android:text="GS" />
+
+    <Button
+        android:id="@+id/edge"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@+id/grayscale"
+        android:onClick="setEdge"
+        android:text="EG" />
+
+    <Button
+        android:id="@+id/blur"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@+id/edge"
+        android:onClick="setBlur"
+        android:text="BR" />
+
+    <Button
+        android:id="@+id/emboss"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@+id/blur"
+        android:onClick="setEmboss"
+        android:text="EB" />
+
+    <Button
+        android:id="@+id/negative"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@+id/emboss"
+        android:onClick="setNegative"
+        android:text="NG" />
+
+    <Button
+        android:id="@+id/norm"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:onClick="setNormal"
+        android:text="R" />
+
+</RelativeLayout>
