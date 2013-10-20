@@ -11,70 +11,70 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_alignParentTop="true"
-        android:layout_marginBottom="70dp"
+       
         android:orientation="horizontal" />
 
-    <Button
-        android:id="@+id/toonshading"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentRight="true"
-        android:onClick="setToonshading"
-        android:text="TS" />
+<HorizontalScrollView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:layout_alignParentLeft="true"
+     >
 
-    <Button
-        android:id="@+id/grayscale"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:layout_alignParentBottom="true"
-        android:layout_toLeftOf="@+id/toonshading"
-        android:onClick="setGS"
-        android:text="GS" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
 
-    <Button
-        android:id="@+id/edge"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:layout_alignParentBottom="true"
-        android:layout_toLeftOf="@+id/grayscale"
-        android:onClick="setEdge"
-        android:text="EG" />
+        <ImageButton
+            android:id="@+id/toonshading"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:onClick="setToonshading"
+            android:src="@drawable/toonshading"/>
 
-    <Button
-        android:id="@+id/blur"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:layout_alignParentBottom="true"
-        android:layout_toLeftOf="@+id/edge"
-        android:onClick="setBlur"
-        android:text="BR" />
+        <ImageButton
+            android:id="@+id/grayscale"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:onClick="setGS"
+            android:src="@drawable/greyscale" />
 
-    <Button
-        android:id="@+id/emboss"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:layout_alignParentBottom="true"
-        android:layout_toLeftOf="@+id/blur"
-        android:onClick="setEmboss"
-        android:text="EB" />
+        <ImageButton
+            android:id="@+id/edge"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:onClick="setEdge"
+            android:src="@drawable/edge" />
 
-    <Button
-        android:id="@+id/negative"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:layout_alignParentBottom="true"
-        android:layout_toLeftOf="@+id/emboss"
-        android:onClick="setNegative"
-        android:text="NG" />
+        <ImageButton
+            android:id="@+id/blur"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:onClick="setBlur"
+            android:src="@drawable/blur" />
 
-    <Button
-        android:id="@+id/norm"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentLeft="true"
-        android:onClick="setNormal"
-        android:text="R" />
+        <ImageButton
+            android:id="@+id/emboss"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:onClick="setEmboss"
+            android:src="@drawable/emboss" />
+
+        <ImageButton
+            android:id="@+id/negative"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:onClick="setNegative"
+            android:src="@drawable/neg" />
+
+        <ImageButton
+            android:id="@+id/norm"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:onClick="setNormal"
+            android:src="@drawable/normal" />
+    </LinearLayout>
+</HorizontalScrollView>
 
 </RelativeLayout>

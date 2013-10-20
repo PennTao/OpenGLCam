@@ -91,15 +91,18 @@ public class CamActivity extends Activity
 	public void setEmboss(View view){
 		mRender.setPorgID(2);
 		mGLSurfaceView.requestRender();
+		mGLSurfaceView.requestRender();// request once will not take effect, so request a second time..
 		
 	}
 	public void setBlur(View view){
 		mRender.setPorgID(3);
 		mGLSurfaceView.requestRender();
+		mGLSurfaceView.requestRender();// request once will not take effect, so request a second time..
 	}
 	public void setEdge(View view){
 		mRender.setPorgID(4);
 		mGLSurfaceView.requestRender();
+		mGLSurfaceView.requestRender();// request once will not take effect, so request a second time..
 	}
 	public void setGS(View view){
 		mRender.setPorgID(5);
@@ -112,6 +115,7 @@ public class CamActivity extends Activity
 	public void setToonshading(View view){
 		mRender.setPorgID(7);
 		mGLSurfaceView.requestRender();
+		mGLSurfaceView.requestRender();// request once will not take effect, so request a second time..
 	}
 	
 	

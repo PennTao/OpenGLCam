@@ -70,6 +70,7 @@ public class MainActivity extends Activity {
 		super.onStart();
 		
 		if(mCamera == null){
+			setContentView(R.layout.activity_main);
 			mCamera = getCameraInstance();
 
 	        // Create our Preview view and set it as the content of our activity.
@@ -83,7 +84,9 @@ public class MainActivity extends Activity {
 	}
 	protected void onResume(){
 		super.onResume();
+		
 		if(mCamera == null){
+			setContentView(R.layout.activity_main);
 			mCamera = getCameraInstance();
 
 	        // Create our Preview view and set it as the content of our activity.

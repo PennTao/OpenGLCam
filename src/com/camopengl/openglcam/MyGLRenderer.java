@@ -84,8 +84,10 @@ public class MyGLRenderer implements Renderer {
         
         // Bind the texture to this unit.
         GLES20.glBindTexture(GLES20.GL_TEXTURE_2D, mTextureDataHandle);
-        GLES20.glUniform1i(mImageUniformHandle, 0);    
-        GLES20.glUniform2f(mStepUniformHandle, 1.0f / (float)width, 1.0f / (float)height);
+        if(mImageUniformHandle != -1)
+        	GLES20.glUniform1i(mImageUniformHandle, 0);    
+        if(mStepUniformHandle != -1)
+        	GLES20.glUniform2f(mStepUniformHandle, 1.0f / (float)width, 1.0f / (float)height);
         Draw();
         if(mScreenshot == true)
         	Log.d("mScreenshot", "true");
@@ -309,9 +311,6 @@ public class MyGLRenderer implements Renderer {
 	public void saveImage(){
 		
 		mScreenshot = true;
-		if(mScreenshot){
-			Log.d("mScreenshot","true");
-		}
 	}
 	
 	
